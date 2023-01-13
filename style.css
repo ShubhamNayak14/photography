@@ -1,0 +1,477 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:600&display=swap');
+
+*{
+    padding:0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Josefin Sans', sans-serif;
+}
+body{
+      
+    height: 2550px;
+    transition: .2s;
+}
+
+section
+{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    overflow: hidden;
+}
+
+section:before
+{
+    content: '';
+    position: absolute;
+    width:100%;
+    height: 1400px;
+    z-index: 1000;
+}
+
+section img{
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    pointer-events: none;
+    background: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 50%, rgba(0,0,0,0.3) 80%, #000 100%);
+}
+#last
+{
+    z-index: 2;
+    padding-top: 100px;
+}
+
+#text
+{
+    position: relative;
+    color: white;
+    z-index: 2;
+    padding-left: 150px;
+    font-weight: 200px;
+    font-size: 50px;
+    text-align:left 120px;
+    padding-top:212px ;
+    text-transform: uppercase;
+    letter-spacing: 12px;
+    
+}
+.smalltext
+{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    color: white;
+    z-index: 2;
+    font-size: small bold;
+    /* text-align:center; */
+    padding-top:19px ;
+    text-transform: uppercase;
+    letter-spacing: 12px;
+    font-family: 'Caveat Brush', cursive;
+}
+
+.ab-text
+{
+    padding: 100px 20%;
+}
+
+.heading{
+    text-align: center;
+    
+}
+
+.heading h2{
+    font-size: 40px;
+    color: #247798;
+    letter-spacing: 0.5px;
+    margin-bottom: 15px;
+}
+.heading p{
+    color: #9bacc4;
+    font-size: 20px;
+    padding-top: 30px;
+    line-height: 28px;
+}
+
+.container{
+    display: grid;
+    margin-top: 25px;
+    grid-template-columns: repeat(auto-fit, minmax(270px, 220px));
+    grid-gap: 1.5rem;
+    align-items: center;
+    margin-left: 120px;
+
+}
+
+.box{
+    height: 340px;
+    width: auto;
+    border-radius: 10px;
+    overflow: hidden;
+    background: gray;
+    transition: all 0.8s;
+    cursor: pointer;
+    position: relative;
+    display: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.box1{
+    background: linear-gradient(to bottom, rgba(0,0,0,0)0%,rgba(0,0,0,.3)50%,rgba(0,0,0,0.5)75%, #000 100%), url(./img/1650522809712.jpg) center center no-repeat;
+    background-size: cover;
+   
+}
+.box2{
+    background: linear-gradient(to bottom, rgba(0,0,0,0)0%,rgba(0,0,0,.3)50%,rgba(0,0,0,0.5)75%, #000 100%), url(./img/DSC00351.JPG) center center no-repeat;
+    background-size: cover;
+   
+}
+.box3{
+    background: linear-gradient(to bottom, rgba(0,0,0,0)0%,rgba(0,0,0,.3)50%,rgba(0,0,0,0.5)75%, #000 100%), url(./img/DSC00486.jpg) center center no-repeat;
+    background-size: cover;
+   
+}
+.box4{
+    background: linear-gradient(to bottom, rgba(0,0,0,0)0%,rgba(0,0,0,.3)50%,rgba(0,0,0,0.5)75%, #000 100%), url(./img/DSC00702.JPG) center center no-repeat;
+    background-size: cover;
+   
+}
+
+.box1:hover{
+    transform: translateY(20px);
+    transition: all 0.5 ease;
+    opacity: 0.6;
+}
+.box2:hover{
+    transform: translateY(20px);
+    transition: all 0.5 ease;
+    opacity: 0.6;
+}
+
+.box3:hover{
+    transform: translateY(20px);
+    transition: all 0.5 ease;
+    opacity: 0.6;
+}
+
+.box4:hover{
+    transform: translateY(20px);
+    transition: all 0.5 ease;
+    opacity: 0.6;
+}
+.bottom
+{
+    text-align: center;
+    color: #adb5bd;
+    padding-top: 150px;
+    font-size: 14px;
+    letter-spacing: 1px;
+
+}
+
+
+/* ----side social media bar --- */
+
+.socialbar{
+    position: fixed;
+    height: auto;
+    top: 30vh;
+}
+
+.socialbar a{
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-decoration: none;
+    transition: backgound .5s ease;
+}
+.socialbar ion-icon{
+    font-size: 35px;
+    padding: 15px;
+}
+.socialbar span{
+    position: absolute;
+    left: 150px;
+    padding: 16px 30px;
+    transition: all .5s;
+    border-radius: 5px;
+    opacity: 0;
+    transition: all .5s;
+}
+.socialbar a:hover span{
+    opacity: 1;
+    left: 65px;
+}
+
+.socialbar span:after{
+    content: '';
+    position: absolute;
+    top: 9px;
+    left: -20px;
+    border-left: 10px solid transparent;
+    border-right: 10px solid;
+    border-bottom: 10px solid transparent;
+    border-top: 10px solid transparent; 
+
+}
+.facebook *{
+    background: #3b5998;
+    border-top-right-radius: 5px;
+}
+.linkedin *{
+    background: #00acee ;
+}
+
+.github *{
+    background:#161416 ;
+}
+
+.instagram *{
+    background: #ea4c89;
+    border-bottom-right-radius: 5px;
+}
+
+.socialbar .facebook span:after{
+    border-right-color: #3b5998 ;
+}
+.socialbar .linkedin span:after{
+    border-right-color: #00acee ;
+}
+.socialbar .github span:after{
+    border-right-color:#161416 ;
+}
+.socialbar .instagram span:after{
+    border-right-color: #ea4c89;
+}
+
+/* ---toggle--- */
+.toggle {
+    cursor: pointer;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    width: 50px;
+    height: 30px;
+    border-radius: 50px;
+    transition: .2s;
+}
+
+.toggle i{
+    width: 50%;
+    line-height: 32px;
+    text-align: center;
+    font-size: 15px;
+    z-index: 1;
+}
+
+.toggle .ball
+{
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    margin: 1.5px;
+    border-radius: 70%;
+    transition: .2s ease-out;
+}
+
+input
+{
+    display: none;
+}
+
+/* ---light mode--- */
+
+.light{
+    background: linear-gradient(180deg, rgb(6, 5, 6) 23%, rgb(201, 197, 210) 100%);;
+}
+
+.light .toggle{
+    background: linear-gradient(145deg, #e1e1e1,#fff);
+    box-shadow: 1px 1px 2px #e6e6e6,
+               -1px -1px 2px #ffffff;
+}
+
+.light .toggle .bxs-sun{
+    color: #fafafa;
+}
+
+.light .toggle .bx-moon{
+    color: #151d2a;
+}
+
+.light .toggle .ball{
+    background: #151d2a;
+}
+
+/* ---dark mode--- */
+
+.dark{
+
+    background: linear-gradient(178deg, rgb(3, 3, 3) 24%, rgb(42, 48, 62) 100%);
+}
+
+.dark .toggle
+{
+    background:#151d2a;
+    box-shadow: 1px 1px 1px #0e131b, -1px -1px 1px #1c2739;
+}
+
+.dark .toggle .bxs-sun
+{
+    color: #fafafa;
+}
+
+.dark .toggle .bx-moon
+{
+    color: #151d2a;
+
+}
+
+.dark .toggle .ball{
+    background: #fafafa;
+    transform: translate(26px);
+}
+
+/* ---Collection--- */
+.title
+{
+    padding: 10px;
+  
+}
+.title h1{
+    color: #247798;
+    text-align: center;
+    font-size: 40px;
+    padding-bottom: 10px;
+    font-family: 'Josefin Sans', sans-serif;
+}
+.title h3{
+    color: #9bacc4;
+    padding-top: 10px;
+    margin-bottom: 30px;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 12px;
+    
+}
+
+.container_1{
+    display: grid;
+    margin-top: 25px;
+    grid-template-columns: repeat(auto-fit, minmax(270px, 220px));
+    grid-gap: 1.5rem;
+    align-items: center;
+    margin-left: 120px;
+    padding-left: 120px;
+
+}
+
+.boxs{
+    height: 340px;
+    width: auto;
+    border-radius: 10px;
+    overflow: hidden;
+    background: gray;
+    transition: all 0.8s;
+    cursor: pointer;
+    position: relative;
+    display: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.box01{
+    background: linear-gradient(to bottom, rgba(0,0,0,0)0%,rgba(0,0,0,.3)50%,rgba(0,0,0,0.5)75%, #000 100%), url(./img/1646315645259\ \(1\).jpg) center center no-repeat;
+    background-size: cover;
+   
+}
+.box02{
+    background: linear-gradient(to bottom, rgba(0,0,0,0)0%,rgba(0,0,0,.3)50%,rgba(0,0,0,0.5)75%, #000 100%), url(./img/1646315656443.jpg) center center no-repeat;
+    background-size: cover;
+   
+}
+.box03{
+    background: linear-gradient(to bottom, rgba(0,0,0,0)0%,rgba(0,0,0,.3)50%,rgba(0,0,0,0.5)75%, #000 100%), url(./img/DSC00702.JPG) center center no-repeat;
+    background-size: cover;
+   
+}
+.box04{
+    background: linear-gradient(to bottom, rgba(0,0,0,0)0%,rgba(0,0,0,.3)50%,rgba(0,0,0,0.5)75%, #000 100%), url(./img/DSC00488\ \(1\).jpg) center center no-repeat;
+    background-size: cover;
+   
+}
+
+.box05{
+    background: linear-gradient(to bottom, rgba(0,0,0,0)0%,rgba(0,0,0,.3)50%,rgba(0,0,0,0.5)75%, #000 100%), url(./img/DSC00387.jpg) center center no-repeat;
+    background-size: cover;
+   
+}
+.box06{
+    background: linear-gradient(to bottom, rgba(0,0,0,0)0%,rgba(0,0,0,.3)50%,rgba(0,0,0,0.5)75%, #000 100%), url(./img/DSC00362.jpg) center center no-repeat;
+    background-size: cover;
+   
+}
+
+.box01:hover{
+    transform: translateY(20px);
+    transition: all 0.5 ease;
+    opacity: 0.6;
+}
+.box02:hover{
+    transform: translateY(20px);
+    transition: all 0.5 ease;
+    opacity: 0.6;
+}
+
+.box03:hover{
+    transform: translateY(20px);
+    transition: all 0.5 ease;
+    opacity: 0.6;
+}
+.box04:hover{
+    transform: translateY(20px);
+    transition: all 0.5 ease;
+    opacity: 0.6;
+}
+.box05:hover{
+    transform: translateY(20px);
+    transition: all 0.5 ease;
+    opacity: 0.6;
+}
+.box06:hover{
+    transform: translateY(20px);
+    transition: all 0.5 ease;
+    opacity: 0.6;
+}
+.explore
+{
+    margin-top: 50px;
+    text-align: center;
+    padding-top: 30px;
+    color:#247798 ;
+}
+.explore a{
+    text-decoration: none;
+    display: inline-block;
+    color:#247798 ;
+    font-size: 24px;
+    border: 2px solid #e1e1e1;
+    padding: 14px 70px;
+    border-radius: 50px;
+    margin-top: 20px;
+}
+.explore a:hover
+{
+    transform: color #fff;
+    transition: all .3;
+    opacity: 0.8;
+}

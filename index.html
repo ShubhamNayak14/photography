@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+    <!-- --- font-awesome-icons--- -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- ---google font--- -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Caveat+Brush&family=Josefin+Sans:wght@100;200;300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <!-- ---nightmode icon--- -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+
+
+    <title>Photography</title>
+</head>
+
+<body class='dark'>
+    <section>
+        <img src="./img/pexels-sem-steenbergen-2930934.jpg" id="first">
+        <img src="./img/pexels-sem-steenbergen-2930934.png" id="last">
+
+        <h1 id='text'>Photography</h1>
+        <small class="smalltext">SHUBHAM NAYAK</small>
+    </section>
+
+    <div class="ab-text">
+        <div class="heading">
+            <h2>Photography</h2>
+            <input type="checkbox" id="toggle">
+            <label class="toggle" for="toggle">
+                <i class="bx bxs-sun"></i>
+                <i class="bx bx-moon"></i>
+                <span class="ball"></span>
+            </label>
+            <p>“Life is like a camera. Just focus on what’s important. Capture the good times.
+                Develop from the negatives and if things don’t turn out – just take another shot.”
+            </p>
+        </div>
+
+
+        <div class="container">
+
+            <div class="box box1">
+                <div class="in">
+
+                </div>
+            </div>
+
+            <div class="box box2">
+                <div class="in">
+
+                </div>
+            </div>
+
+            <div class="box box3">
+                <div class="in">
+
+                </div>
+            </div>
+
+            <div class="box box4">
+                <div class="in">
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="title">
+        <h1>Collection</h1>
+        <h3>Ramdom click</h3>
+    </div>
+
+    <div class="container_1">
+
+        <div class="boxs box01">
+            <div class="in">
+
+            </div>
+        </div>
+
+        <div class="boxs box02">
+            <div class="in">
+
+            </div>
+        </div>
+
+        <div class="boxs box03">
+            <div class="in">
+
+            </div>
+        </div>
+
+        <div class="boxs box04">
+            <div class="in">
+
+            </div>
+        </div>
+
+        <div class="boxs box05">
+            <div class="in">
+
+            </div>
+        </div>
+
+        <div class="boxs box06">
+            <div class="in">
+
+            </div>
+        </div>
+    </div>
+
+    <div class="explore">
+        <a href="https://asterix014.github.io/Explore/" target="_blank">Explore</a>
+    </div>
+    <div class="bottom">
+        <p>&copy;2023. Design By Shubham Nayak</p>
+    </div>
+
+
+    <div class="socialbar">
+        <ul>
+            <li><a href="https://www.facebook.com/people/Shubham-Nayak/100034777105672/?mibextid=ZbWKwL" target="_blank" class="facebook"><ion-icon
+                        name="logo-facebook"></ion-icon><span>Facebook</span></a></li>
+            <li><a href="https://www.linkedin.com/in/shubham-nayak-579475253" target="_blank" class="linkedin"><ion-icon
+                        name="logo-linkedin"></ion-icon><span>Linkedin</span></a></li>
+            <li><a href="https://github.com/asterix014" target="_blank" class="github"><ion-icon
+                        name="logo-github"></ion-icon><span>Github</span></a></li>
+            <li><a href="https://www.instagram.com/_asteri_x_/" target="_blank" class="instagram"><ion-icon
+                        name="logo-instagram"></ion-icon><span>Instagram</span></a></li>
+        </ul>
+    </div>
+
+
+
+
+    <script>
+
+        let first = document.getElementById("first");
+        let last = document.getElementById("last");
+        let text = document.getElementById("text");
+
+        const body = document.querySelector("body");
+        const toggle = document.querySelector("#toggle");
+        const sunIcon = document.querySelector(".toggle.bxs-sun");
+        const moonIcon = document.querySelector(".toggle.bx-moon");
+
+        window.addEventListener('scroll', () => {
+            var value = window.scrollY;
+
+            first.style.top = value * 0.7 + 'px';
+            last.style.bottom = value * -0.01 + 'px';
+            text.style.top = value * 0.5 + 'px';
+        })
+
+        toggle.addEventListener("change", () => {
+            body.classList.toggle("dark");
+
+            sunIcon.className == "bx bxs-sun " ? "bx bx-sun " : "bx bxs-sun";
+            moonIcon.className == "bx bxs-moon" ? "bx bx-moon" : "bx bxs-moon";
+
+        })
+    </script>
+
+</body>
+
+</html>
